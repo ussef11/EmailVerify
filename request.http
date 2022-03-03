@@ -1,0 +1,26 @@
+
+###
+POST http://localhost:8000/api/auth/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "first_name":"teklllstyyy",
+    "last_name": "test",
+    "email": "testyyykky@gmail.com",
+    "password": "123456"
+}
+
+###
+
+POST http://localhost:8000/api/auth/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "test@gmail.com",
+    "password": "123456"
+}
+
+###
+GET http://localhost:8000/welcome HTTP/1.1
+Content-Type: application/json
+x_access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjIxNGUyYzA1MzAxNTczM2U0Y2I4ZjNiIiwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsImlhdCI6MTY0NTUzNTk1MCwiZXhwIjoxNjQ1NTQzMTUwfQ.seD4Y7O_cREBRz7fqcbUSbw-j5HSrG5qsrFHykt2clY

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"/>
+
+
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="C:\Users\21276\Desktop\React\my-app\public\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+
+
+    <title>Email Verify</title>
+  </head>
+  <body>
+    <header>
+      <a  style="text-decoration: none" class="LOGO" href="http://localhost:3001/">Email Verify</a>
+      <div class="menu-toggle"> </div>
+      <nav>
+        <ul>
+          <li> <a  style="text-decoration: none" href="#" class="Active">Pricing</a> </li>
+          <li> <a style="text-decoration: none" href="#">Blog</a> </li>
+          <li> <a style="text-decoration: none" href="#">Contact</a> </li>
+          <li> <a  style="text-decoration: none" href="http://localhost:3001/login">LOGIN</a> </li>
+          <li> <a  style="text-decoration: none" href="http://localhost:3001/register">SignUp</a> </li>
+           </ul>
+      </nav>
+      <div class="clearfix"></div>
+    </header>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.menu-toggle').click(function(){
+          $('.menu-toggle').toggleClass('active')
+          $('nav').toggleClass('active')
+        })
+      })
+    </script>
+
+<style>
+  body{
+    background-color: white;
+  }
+  header{
+position: relative;
+max-width:  2200px;
+margin: 1px auto;
+background: #f4f4f4;
+box-sizing: border-box;
+border-radius: 4px;
+box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+
+.LOGO{
+color:#007bff;
+height: 60px;
+font-size: 36px;
+line-height: 60px;
+padding: 0 20px;
+
+text-align: center;
+box-sizing: border-box;
+float: left;
+font-weight: 700;
+text-decoration: none;
+}
+
+nav{
+float: right;
+}
+.clearfix{
+clear: both;
+}
+nav ul{
+margin: 0;
+padding: 0;
+display: flex;
+
+}
+nav ul li{
+list-style: none;
+}
+nav ul li a{
+margin: 10px 0;
+padding: 10px 20px;
+display: block;
+text-decoration: none;
+color: #262626;
+
+
+}
+nav ul li a.active,
+nav ul li a:hover{
+background: #007bff;
+color: #f4f4f4;
+transition: 0.5s;
+}
+@media (max-width:3000px) {
+header{
+  margin: 20px;
+}
+}
+@media(max-width:768px)
+{ .menu-toggle{
+display: block;
+width: 40px;
+height: 40px;
+margin: 10px;
+float: right;
+cursor: pointer;
+text-align: center;
+font-size: 30px;
+color: #069370;
+
+}
+.menu-toggle:before
+{
+content:'\f0c9 ';
+font-family: fontAwesome;
+line-height: 40px;
+}
+.menu-toggle.active:before
+{
+content:'\f00d  ';
+}
+nav{
+display: none;
+}
+
+nav.active{
+display: block;
+width: 100%;
+}
+nav.active ul{
+display: block;
+}
+}
+</style>
+
+
+
+
+    <div id="root"></div>
+
+  </body>
+</html>
