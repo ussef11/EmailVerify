@@ -1,3 +1,2 @@
 # EmailVerify
-Email Verify Application with Node.js Api And react.js 
 EMAIL VERIFY WEB APICATION WITH DATABASE MONGODB AND LOGIN SIGN UP  PAGE JUST CHANGE LINK IN  FILE .ENV (MONGO_URL) ;)
