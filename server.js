@@ -67,6 +67,6 @@ app.post('/verify',(req,res)=>{
   // res.send(JSON.stringify(addemail))
 })
 
-app.listen(3000, () => {
+app.listen(5000, () => {
   console.log("Search server is running!");
 });
